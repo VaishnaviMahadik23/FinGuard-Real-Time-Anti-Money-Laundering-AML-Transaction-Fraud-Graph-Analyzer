@@ -1,0 +1,12 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid;
+}
+.low    { background: rgba(16,185,129,0.10);  color: var(--green);  border-color: rgba(16,185,129,0.25); }
+.medium { background: rgba(245,158,11,0.12);  color: var(--amber);  border-color: rgba(245,158,11,0.30); }
+.high   { background: rgba(239,68,68,0.12);   color: var(--red);    border-color: rgba(239,68,68,0.30); }

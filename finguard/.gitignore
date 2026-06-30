@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+dist/
+build/
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# ML models (large binaries — store in object storage for prod)
+backend/ml_models/
+ml_models/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Env files
+.env
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

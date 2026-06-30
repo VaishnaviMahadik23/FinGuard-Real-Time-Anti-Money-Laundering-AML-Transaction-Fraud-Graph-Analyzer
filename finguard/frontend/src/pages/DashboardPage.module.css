@@ -1,0 +1,60 @@
+.page { padding: 16px; }
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.kpiCard {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+}
+
+.kpiLabel { font-size: 11px; color: var(--text3); font-weight: 500; margin-bottom: 6px; }
+.kpiValue { font-size: 22px; font-weight: 700; line-height: 1; }
+.kpiSub   { font-size: 11px; color: var(--text3); margin-top: 5px; }
+
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.panel {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.panelHeader {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.panelBody { padding: 12px 14px; }
+
+.alertFeed { padding: 0 14px; max-height: 380px; overflow-y: auto; }
+
+.alertRow {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  animation: fade-in 0.2s ease;
+}
+
+.alertTitle { font-size: 12px; font-weight: 600; margin-bottom: 2px; }
+.alertDesc  { font-size: 11px; color: var(--text2); }
+.alertTime  { font-size: 10px; color: var(--text3); margin-top: 2px; }
+
+.scoreRow   { margin-bottom: 10px; }
+.scoreLabel { display: flex; justify-content: space-between; font-size: 11px; color: var(--text2); margin-bottom: 4px; }
+.scoreTrack { height: 6px; background: var(--bg4); border-radius: 3px; overflow: hidden; }
+.scoreFill  { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
+
+.empty { font-size: 12px; color: var(--text3); padding: 12px 0; }
+.mono { font-family: var(--font-mono); }

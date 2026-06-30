@@ -1,0 +1,42 @@
+/* FinGuard — Global dark-mode stylesheet */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:          #0a0c10;
+  --bg2:         #0f1218;
+  --bg3:         #141820;
+  --bg4:         #1a2030;
+  --border:      rgba(255,255,255,0.07);
+  --border2:     rgba(255,255,255,0.12);
+  --text:        #e2e8f0;
+  --text2:       #94a3b8;
+  --text3:       #64748b;
+  --red:         #ef4444;
+  --red-dim:     rgba(239,68,68,0.08);
+  --amber:       #f59e0b;
+  --green:       #10b981;
+  --blue:        #3b82f6;
+  --purple:      #8b5cf6;
+  --cyan:        #06b6d4;
+  --font:        'Inter', -apple-system, sans-serif;
+  --font-mono:   'JetBrains Mono', monospace;
+  --radius:      8px;
+  --radius-lg:   12px;
+}
+
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 14px; line-height: 1.5; }
+#root { height: 100%; }
+
+a { color: var(--blue); text-decoration: none; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px; }
+
+.mono { font-family: var(--font-mono); }
+
+/* Animations */
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+@keyframes slide-in { from{transform:translateX(100%)} to{transform:translateX(0)} }
+@keyframes fade-in { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
+.fade-in { animation: fade-in 0.2s ease; }
